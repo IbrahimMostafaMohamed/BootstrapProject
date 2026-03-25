@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body class="auth-bg">
+    <div class="overlay"></div>
+
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <div class="auth-card p-5 bg-white bg-opacity-75">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Create Account</h2>
+          <p class="text-muted">Join us today</p>
+        </div>
+
+        <form id="registerForm">
+          <div class="mb-3">
+            <input
+              type="text"
+              id="regUsername"
+              class="form-control custom-input"
+              placeholder="Username"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              id="regEmail"
+              class="form-control custom-input"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="password"
+              id="regPassword"
+              class="form-control custom-input"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <input
+              type="password"
+              id="regConfirmPassword"
+              class="form-control custom-input"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+
+          <p id="regMessage" class="alert alert-danger d-none"></p>
+
+          <button type="submit" class="btn custom-btn w-100">Register</button>
+        </form>
+
+        <div class="text-center mt-4">
+          <small
+            >Already have an account?
+            <a href="index.html" class="fw-semibold text-decoration-none"
+              >Login</a
+            >
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>
