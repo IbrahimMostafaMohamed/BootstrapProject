@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kitchen Cart - TheBestCook</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+</head>
+<body>
+
+    <nav class="customm navbar navbar-expand-lg bg-white shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="api.html">
+                  <span class="first-word">TheBest</span><span class="second-word">Cook</span>
+            </a>
+            <a href="api.html" class="btn btn-outline-success btn-sm">
+                <i class="fas fa-arrow-left me-1"></i> Back to Recipes
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold"><i class="fas fa-shopping-basket text-success me-2"></i>Your Selected Recipes</h2>
+                    <button onclick="clearAll()" class="btn btn-danger btn-sm rounded-pill px-3">Clear All</button>
+                </div>
+
+                <div id="cart-items-container" class="row g-3">
+                    </div>
+
+                <div id="empty-msg" class="text-center py-5 d-none">
+                    <i class="fas fa-utensils fa-4x text-muted mb-3"></i>
+                    <h4>Your cart is hungry!</h4>
+                    <p class="text-muted">Go back and add some delicious recipes.</p>
+                    <a href="api.html" class="btn btn-success mt-3">Browse Recipes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main3.js"></script>
+
+
+</body>
+</html>

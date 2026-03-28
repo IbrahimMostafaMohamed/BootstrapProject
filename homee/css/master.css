@@ -447,3 +447,30 @@ overflow-x: hidden;}
   margin-top: 1px !important;
  }
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+.custom-brand {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.6rem;
+    letter-spacing: -1px; 
+    transition: all 0.3s ease;
+}
+
+.custom-brand .first-word {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.custom-brand .second-word {
+    color: #28a745; 
+    font-weight: 800; 
+    text-transform: uppercase;
+}
+
+.custom-brand:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 8px rgba(40, 167, 69, 0.4));
+}

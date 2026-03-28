@@ -1,0 +1,50 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+.cart-card {
+  transition: all 0.4s ease;
+  animation: slideIn 0.5s ease forwards;
+  opacity: 0;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.remove-animation {
+  transform: translateX(100px);
+  opacity: 0 !important;
+}
+.empty-cart-img {
+  width: 200px;
+  opacity: 0.6;
+}
+
+.customm {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.6rem;
+    letter-spacing: -1px; 
+    transition: all 0.3s ease;
+}
+
+.customm .first-word {
+    color: #b41010;
+    font-weight: 600;
+}
+
+.customm .second-word {
+    color: #28a745; 
+    font-weight: 800; 
+    text-transform: uppercase;
+}
+
+.customm:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 8px rgba(40, 167, 69, 0.4));
+} 
